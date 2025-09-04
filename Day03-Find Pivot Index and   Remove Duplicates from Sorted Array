@@ -1,0 +1,40 @@
+// Day 3 - Problem 1: Find Pivot Index
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int pivotIndex(vector<int>& nums) {
+        int totalSum = 0, leftSum = 0;
+        for (int num : nums) totalSum += num;
+
+        for (int i = 0; i < nums.size(); i++) {
+            if (leftSum == totalSum - leftSum - nums[i])
+                return i;
+            leftSum += nums[i];
+        }
+        return -1;
+    }
+};
+
+
+// Day 3 - Problem 2: Remove Duplicates from Sorted Array
+#include <bits/stdc++.h>
+using namespace std;
+
+class Solution {
+public:
+    int removeDuplicates(vector<int>& nums) {
+        if (nums.empty()) return 0;
+
+        int index = 1; // position for next unique element
+        for (int i = 1; i < nums.size(); i++) {
+            if (nums[i] != nums[i - 1]) {
+                nums[index] = nums[i];
+                index++;
+            }
+        }
+        return index;
+    }
+};
+
