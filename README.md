@@ -9,7 +9,7 @@ Goal: Improve problem-solving skills, DSA knowledge, and coding consistency.
 
 - ✅ **Day 1** – Two Sum, Best Time to Buy and Sell Stock
 - ✅ **Day 2** – Contains Duplicate, Move Zeroes
-- ⏳ **Day 3** – (Coming soon...)
+- ✅ **Day 3** - Find Pivot Index, Remove Duplicates from Sorted Array 
 
 ---
 
